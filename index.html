@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>EGONZDEV | Oficial Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my personal portfolio">
+        <link rel="icon" type="image/png" href="egonzdev-favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/8466f6ca41.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!-- Sidenav Lateral Entry -->
+        <aside class="sidenav" id="sideNav">
+            <!-- Close btn & social icons -->
+            <div class="sn-header">
+                <span class="sn-header-cls-btn" onclick="clsSn()"><i class="fa-solid fa-angle-right"></i></span>
+                <!--wrapper para los iconos-->
+                <div class="sn-header-social-container">
+                    <a class="sn-header-social-icons" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="sn-header-social-icons" href="#"><i class="fa-brands fa-github"></i></a>
+                    <a class="sn-header-social-icons" href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+
+            <nav class="sn-nav">
+                <ul class="sn-nav-list">
+                    <!-- Sidenav List Items and Anchors -->
+                    <li class="sn-nav-list-items"><a href="#topMarker" class="sn-nav-list-a">Home</a></li>
+                    <li class="sn-nav-list-items"><a href="#aboutMe" class="sn-nav-list-a">About Me</a></li>
+                    <li class="sn-nav-list-items"><a href="#eduction" class="sn-nav-list-a">Education</a></li>
+                    <li class="sn-nav-list-items"><a href="#projects" class="sn-nav-list-a">Projects</a></li>
+                    <li class="sn-nav-list-items"><a href="#skills" class="sn-nav-list-a">Skills</a></li>
+                    <li class="sn-nav-list-items"><a href="#contactMe" class="sn-nav-list-a">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Capa #2 (Header) -->
+        <header>
+            <!-- Este contenedor general tiene 2 clases, las usaremos para todas las secciones (max-width) -->
+            <div class="general-content-wrapper header-content-wrapper">
+                <h1 class="header-logo"><a class="header-logo-a" href="#">EGONZDEV</a></h1>
+                <!-- Navigation (Desktop Only) -->
+                <nav class="desktop-header-nav">
+                    <ul class="header-nav-list">
+                        <!--Header List Items and Anchors -->
+                        <li class="header-nav-list-items"><a href="#topMarker" class="header-nav-list-a">Home</a></li>
+                        <li class="header-nav-list-items"><a href="#aboutMe" class="header-nav-list-a">About Me</a></li>
+                        <li class="header-nav-list-items"><a href="#education" class="header-nav-list-a">Education</a></li>
+                        <li class="header-nav-list-items"><a href="#projects" class="header-nav-list-a">Projects</a></li>
+                        <li class="header-nav-list-items"><a href="#skills" class="header-nav-list-a">Skills</a></li>
+                        <li class="header-nav-list-items"><a href="#contactMe" class="header-nav-list-a">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- Header-Close Btn -->
+                <span class="header-opn-btn" onclick="opnSn()"><i class="fa-solid fa-angle-left"></i></span>
+            </div>
+        </header>
+
+        <main id="mainContent">
+            <!-- Contenedor general para los max-widths -->
+            <div class="general-content-wrapper main-content-wrapper">
+                <!-- Secciones clásicas -->
+                <section class="sections hero" id="topMarker">
+                    <!-- Contenedor para la imagen de perfil del hero -->
+                    <div class="hero-img-container">
+                        <!--Imagen del hero (Redonda) -->
+                        <img class="hero-profile-img" src="pp-dark-jacket.png" alt="This is a picture of me.">
+                    </div>
+
+                    <!-- Textbox del HERO -->
+                    <div class="hero-textbox">
+                        <small class="hero-textbox-small">Hello!</small>
+                        <h2 class="hero-textbox-heading">I'm Eric</h2>
+                        <p class="hero-textbox-parag">Innovative web development for unique and attractive projects</p>
+                        <a class="hero-textbox-contact-btn" href="#contactMe">Let's Talk<span class="hero-textbox-contact-btn-icon"><i class="fa-regular fa-paper-plane"></i></span></a>
+                    </div>
+                </section>
+
+                <!-- Sección ABOUT ME -->
+                <section class="sections about-me" id="aboutMe">
+                    <!-- Contenedor para img flotante -->
+                    <div class="about-me-img-container">
+                        <!-- Img del about me -->
+                        <img class="about-me-profile-img" src="pp-dark-bg-camisa.png" alt="This is me.">
+                    </div>
+
+                    <!-- Textbox del About Me Section -->
+                    <div class="about-me-textbox">
+                        <h2 class="about-me-heading">Bit about me.</h2>
+                        <p class="about-me-parag">Front-end web developer with experience in HTML, CSS, JavaScript, React and SQL, Git, GitHub and Figma.</p>
+                    </div>
+
+                    <!--About me Stats container-->
+                    <div class="about-me-stats-container">
+                        <div class="about-me-stat-wrapper">
+                            <span class="about-me-stat-number">03+</span>
+                            <span class="about-me-stat-description">Years Of Experience</span>
+                        </div>
+                        <div class="about-me-stat-wrapper">
+                            <span class="about-me-stat-number">06+</span>
+                            <span class="about-me-stat-description">Completed Projects</span>
+                        </div>
+                        <div class="about-me-stat-wrapper">
+                            <span class="about-me-stat-number">03+</span>
+                            <span class="about-me-stat-description">Companies Worked</span>
+                        </div>
+                    </div>
+
+                    <button class="about-me-downloadcv-btn">Download CV<span class="about-me-downloadcv-btn-icon"><i class="fa-solid fa-download"></i></span></button>
+                </section>
+
+                <section class="sections projects" id="projects">
+                    <!-- Textbox del section PROJECTS -->
+                    <div class="projects-textbox">
+                        <h2 class="projects-heading">Projects</h2>
+                        <p class="projects-parag">Check out some of my recent web development projects showcasing my skills in HTML, CSS, and JavaScript.</p>
+                    </div>
+
+                    <div class="projects-gallery-container">
+                        <!-- Contenedor de arriba -->
+                        <div class="projects-gallery-picture-container">
+                            <!-- Imagen del proyecto -->
+                            <span class="projects-gallery-picture-controls-left"><i class="fa-solid fa-angle-left"></i></span>
+                            <img class="projects-gallery-project-picture" src="urban-runner-mockup.png" alt="This is my project.">
+                            <div class="projects-gallery-project-cover">
+                                <h3 class="projects-gallery-project-cover-heading">Urban Runners - Web App</h3>
+                                <p class="projects-gallery-project-cover-parag">I built this project with HTML, CSS and JavaScript technologies.</p>
+                                <a class="projects-gallery-project-cover-a" href="#">Visit Website</a>
+                            </div>
+                            <span class="projects-gallery-picture-controls-right"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                        <!-- Contenedor de abajo -->
+                        <div class="projects-gallery-picture-container">
+                            <!-- Imagen del proyecto -->
+                            <span class="projects-gallery-picture-controls-left"><i class="fa-solid fa-angle-left"></i></span>
+                            <img class="projects-gallery-project-picture" src="portfolio-aboutme-mockup.png" alt="This is my project.">
+                            <div class="projects-gallery-project-cover">
+                                <h3 class="projects-gallery-project-cover-heading">Personal - Portfolio</h3>
+                                <p class="projects-gallery-project-cover-parag">I built this project with HTML, CSS and JavaScript technologies.</p>
+                                <a class="projects-gallery-project-cover-a" href="https://egonzdev.github.io/">Visit Website</a>
+                            </div>
+                            <span class="projects-gallery-picture-controls-right"><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="sections education" id="education">
+                    <div class="education-textbox">
+                        <h2 class="education-heading">Education</h2>
+                        <p class="education-parag">Professional web developer focused on digital product design, user experience and SEO.</p>
+                    </div>
+
+                    <!-- Cards-Container -->
+                    <div class="education-areas-container">
+                        <div class="education-area-card">
+                            <span class="education-area-card-icon"><i class="fa-solid fa-code"></i></span>
+                            <h3 class="area-card-heading">Web Development</h3>
+                            <p class="area-card-parag">Front-end web developer with experience in HTML, CSS, JavaScript and interface creation in Figma.</p>
+                            <a href="#" class="area-card-a">Read more<span class="area-card-a-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                        </div>
+                        <div class="education-area-card">
+                            <span class="education-area-card-icon"><i class="fa-solid fa-paintbrush"></i></span>
+                            <h3 class="area-card-heading">Product Design</h3>
+                            <p class="area-card-parag">Experience in product design and marketing focused on services and digital products.</p>
+                            <a href="#" class="area-card-a">Read more<span class="area-card-a-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                        </div>
+                        <div class="education-area-card">
+                            <span class="education-area-card-icon"><i class="fa-regular fa-circle-check"></i></span>
+                            <h3 class="area-card-heading">UI / UX</h3>
+                            <p class="area-card-parag">Digital product designer with knowledge in UI/UX, accessibility and SEO strategies.</p>
+                            <a href="#" class="area-card-a">Read more<span class="area-card-a-icon"><i class="fa-solid fa-angle-right"></i></span></a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Section -->
+                <section class="sections skills" id="skills">
+                    <div class="skills-textbox">
+                        <h2 class="skills-heading">Skills</h2>
+                        <p class="skills-parag">Proficient in web development technologies like HTML, CSS, JavaScript, Git, GitHub, Figma, React and MySQL.</p>
+                    </div>
+
+                    <div class="skills-techs-container">
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-brands fa-html5"></i></span>
+                            <span class="skills-techs-name">HTML</span>
+                        </div>
+                        <!-- Another Tech -->
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-brands fa-css3-alt"></i></span>
+                            <span class="skills-techs-name">CSS</span>
+                        </div>
+                        <!-- Another Tech -->
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-brands fa-js"></i></span>
+                            <span class="skills-techs-name">JAVASCRIPT</span>
+                        </div>
+                        <!-- Another Tech -->
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-brands fa-react"></i></span>
+                            <span class="skills-techs-name">REACT</span>
+                        </div>
+                        <!-- Another Tech -->
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-brands fa-git"></i></span>
+                            <span class="skills-techs-name">GIT</span>
+                        </div>
+                        <!-- Another Tech -->
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-brands fa-github"></i></span>
+                            <span class="skills-techs-name">GIT HUB</span>
+                        </div>
+                        <!-- Another Tech -->
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-solid fa-database"></i></span>
+                            <span class="skills-techs-name">MY SQL</span>
+                        </div>
+                        <!-- Another Tech -->
+                        <div class="skills-techs-wrappers">
+                            <span class="skills-techs-logo"><i class="fa-brands fa-figma"></i></span>
+                            <span class="skills-techs-name">FIGMA</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="sections contact-me" id="contactMe">
+                    <div class="contact-me-textbox">
+                        <h2 class="contact-me-heading">Let's Work Together</h2>
+                        <p class="contact-me-parag">Looking for a skilled front-end developer to bring your project to life? Contact me by form or my social networks.</p>
+                    </div>
+
+                    <!-- Form Container -->
+                    <form method="get">
+                        <div class="form-personalia">
+                            <!-- Name / Company -->
+                            <div class="form-input-wrapper">
+                                <label for="name-company">Name | Company:</label>
+                                <div class="input-icon-wrapper">
+                                    <span class="input-icon"><i class="fa-regular fa-user"></i></span>
+                                    <input type="text" id="name-company" name="name-company" required placeholder="Michael Robertson">
+                                </div>
+                            </div>
+                            <!-- Email -->
+                            <div class="form-input-wrapper">
+                                <label for="email">E-mail:</label>
+                                <div class="input-icon-wrapper">
+                                    <span class="input-icon"><i class="fa-regular fa-envelope"></i></span>
+                                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Services -->
+                        <div class="form-services">
+                            <div class="services-input-wrapper">
+                                <label for="services">Services:</label>
+                                <select id="services" name="services">
+                                    <option value="landing-page">Landing Page</option>
+                                    <option value="portfolio">Portfolio</option>
+                                    <option value="web-site">Web Site</option>
+                                    <option value="landing-page">Web App + Database</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- TEXTAREA -->
+                        <div class="form-details">
+                            <div class="details-input-wrapper">
+                                <label for="details">Tell Me More:</label>
+                                <textarea id="details" name="project-details" required placeholder="We are a company that rents vehicles and we want to build a web app that allows the customer..." rows="5"></textarea>
+                            </div>
+                        </div>
+                        <!-- FORM SUBMIT BTN -->
+                        <button class="form-submit-btn" type="submit">Submit</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <!-- Contenedor General width para el footer -->
+            <div class="general-content-wrapper footer-content-wrapper">
+                <!-- Nav del footer -->
+                <nav class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-list-items"><a class="footer-nav-list-items-a" href="#aboutMe">About</a></li>
+                        <li class="footer-nav-list-items"><a class="footer-nav-list-items-a" href="#projects">Projects</a></li>
+                        <li class="footer-nav-list-items"><a class="footer-nav-list-items-a" href="#education">Education</a></li>
+                        <li class="footer-nav-list-items"><a class="footer-nav-list-items-a" href="#contactMe">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- ICONS CONTAINER -->
+                <div class="footer-social-container">
+                    <a class="footer-social-a" href="#"><span class="footer-social-a-icons"><i class="fa-brands fa-linkedin"></i></span></a> 
+                    <a class="footer-social-a" href="#"><span class="footer-social-a-icons"><i class="fa-brands fa-github"></i></span></a> 
+                    <a class="footer-social-a" href="#"><span class="footer-social-a-icons"><i class="fa-brands fa-twitter"></i></span></a> 
+                    <a class="footer-social-a" href="#"><span class="footer-social-a-icons"><i class="fa-brands fa-instagram"></i></span></a> 
+                    <a class="footer-social-a" href="#"><span class="footer-social-a-icons"><i class="fa-brands fa-youtube"></i></span></a> 
+                    <a class="footer-social-a" href="#"><span class="footer-social-a-icons"><i class="fa-brands fa-twitch"></i></span></a> 
+                </div>
+
+                <!-- Copyright Parag -->
+                <p class="footer-copyright-parag">Copyright Egonzdev 2023. All rights reserved ©</p>
+
+                <!-- Return To top btn -->
+                <a class="return-to-top-btn" href="#topMarker"><i class="fa-solid fa-angle-up" ></i></a>
+            </div>
+        </footer>
+
+    <script>
+        let sidenav = document.getElementById('sideNav');
+        let layer1 = document.getElementById('mainContent');
+
+        function opnSn() {
+            sidenav.style.transform = "translateX(0%)";
+            layer1.style.opacity = "0.4";
+        }
+
+        function clsSn() {
+            sidenav.style.transform = "translateX(100%)";
+            layer1.style.opacity = "1";
+        }
+    </script>
+    </body>
+</html>
