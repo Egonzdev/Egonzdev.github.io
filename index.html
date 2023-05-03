@@ -119,32 +119,55 @@
                         <p class="projects-parag">Check out some of my recent web development projects showcasing my skills in HTML, CSS, and JavaScript.</p>
                     </div>
 
-                    <div class="projects-gallery-container">
-                        <!-- Contenedor de arriba -->
-                        <div class="projects-gallery-picture-container">
-                            <!-- Imagen del proyecto -->
-                            <span class="projects-gallery-picture-controls-left"><i class="fa-solid fa-angle-left"></i></span>
-                            <img class="projects-gallery-project-picture" src="urban-runner-mockup.png" alt="This is my project.">
-                            <div class="projects-gallery-project-cover">
-                                <h3 class="projects-gallery-project-cover-heading">Urban Runners - Web App</h3>
-                                <p class="projects-gallery-project-cover-parag">I built this project with HTML, CSS and JavaScript technologies.</p>
-                                <a class="projects-gallery-project-cover-a" href="#">Visit Website</a>
+                    <div class="ss-container">
+                        <!-- Slides #1 -->
+                        <div class="ss-slide">
+                            <img class="ss-slide-img" src="apple-form-mockup-alt2.jpg" alt="This is my project">
+                            <div class="ss-slide-textbox">
+                                <h3 class="ss-slide-textbox-heading">Minimal Style Forms</h3>
+                                <p class="ss-slide-textbox-parag">Full custom web development with HTML, CSS and JavaScript, hosted on GitHub Pages and Vercel for maximum accessibility.</p>
+                                <a class="ss-slide-textbox-a" href="#">Visit Website</a>
                             </div>
-                            <span class="projects-gallery-picture-controls-right"><i class="fa-solid fa-angle-right"></i></span>
                         </div>
-                        <!-- Contenedor de abajo -->
-                        <div class="projects-gallery-picture-container">
-                            <!-- Imagen del proyecto -->
-                            <span class="projects-gallery-picture-controls-left"><i class="fa-solid fa-angle-left"></i></span>
-                            <img class="projects-gallery-project-picture" src="portfolio-aboutme-mockup.png" alt="This is my project.">
-                            <div class="projects-gallery-project-cover">
-                                <h3 class="projects-gallery-project-cover-heading">Personal - Portfolio</h3>
-                                <p class="projects-gallery-project-cover-parag">I built this project with HTML, CSS and JavaScript technologies.</p>
-                                <a class="projects-gallery-project-cover-a" href="https://egonzdev.github.io/">Visit Website</a>
+                        <!-- Slides #2 -->
+                        <div class="ss-slide">
+                            <img class="ss-slide-img" src="apple-form-mockup.jpg" alt="This is my project">
+                            <div class="ss-slide-textbox">
+                                <h3 class="ss-slide-textbox-heading">Minimal Style Forms</h3>
+                                <p class="ss-slide-textbox-parag">Full custom web development with HTML, CSS and JavaScript, hosted on GitHub Pages and Vercel for maximum accessibility.</p>
+                                <a class="ss-slide-textbox-a" href="#">Visit Website</a>
                             </div>
-                            <span class="projects-gallery-picture-controls-right"><i class="fa-solid fa-angle-right"></i></span>
                         </div>
+                        <!-- Slides #3 -->
+                        <div class="ss-slide">
+                            <img class="ss-slide-img" src="ed-mockup-alt2.jpg" alt="This is my project">
+                            <div class="ss-slide-textbox">
+                                <h3 class="ss-slide-textbox-heading">Personal | Company Portfolios</h3>
+                                <p class="ss-slide-textbox-parag">Full custom web development with HTML, CSS and JavaScript, hosted on GitHub Pages and Vercel for maximum accessibility.</p>
+                                <a class="ss-slide-textbox-a" href="#topMarker">Visit Website</a>
+                            </div>
+                        </div>
+                        <!-- Slides #4 -->
+                        <div class="ss-slide">
+                            <img class="ss-slide-img" src="travel-mockup-alt2.jpg" alt="This is my project">
+                            <div class="ss-slide-textbox">
+                                <h3 class="ss-slide-textbox-heading">Travel Agency | Landing Page</h3>
+                                <p class="ss-slide-textbox-parag">Full custom web development with HTML, CSS and JavaScript, hosted on GitHub Pages and Vercel for maximum accessibility.</p>
+                                <a class="ss-slide-textbox-a" href="https://travel-landingpage-gilt.vercel.app/">Visit Website</a>
+                            </div>
+                        </div>
+                        <!-- Arrow Controls -->
+                        <span class="prev-btn"><i class="fa-solid fa-angle-left"></i></span>
+                        <span class="next-btn"><i class="fa-solid fa-angle-right"></i></span>
                     </div>
+                    <!-- Dots Container -->
+                    <div class="dots-container">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    
                 </section>
 
                 <!-- Education -->
@@ -324,6 +347,28 @@
         function clsSn() {
             sidenav.style.transform = "translateX(100%)";
             layer1.style.opacity = "1";
+        }
+    </script>
+
+    <script>
+        // Función Slider
+        let slidesIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("ss-slide");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.visibility = "hidden";
+                dots[i].style.backgroundColor = "#CCCCCC44";
+            }
+
+            slidesIndex++;
+            if(slidesIndex > slides.length) {slidesIndex = 1}
+            slides[slidesIndex - 1].style.visibility = "visible";
+            dots[slidesIndex - 1].style.backgroundColor = "#000000CC";
+            setTimeout(showSlides, 4000);
         }
     </script>
     </body>
