@@ -948,6 +948,7 @@ textarea{
 
     .prev-btn, .next-btn{
         display: block;
+        padding: var(--fs-n);
 }
 
 .ss-slide-textbox-heading{
