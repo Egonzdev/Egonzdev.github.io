@@ -262,6 +262,7 @@
                         <div class="form-personalia">
                             <!-- Name / Company -->
                             <div class="form-input-wrapper">
+                                <input name="bot-field" hidden>
                                 <label for="name-company">Name | Company:</label>
                                 <div class="input-icon-wrapper">
                                     <span class="input-icon"><i class="fa-regular fa-user"></i></span>
@@ -297,9 +298,9 @@
                                 <textarea id="details" name="project-details" required placeholder="We are a company that rents vehicles and we want to build a web app that allows the customer..." rows="5"></textarea>
                             </div>
                         </div>
-                        <!-- FORM SUBMIT BTN -->
-                        <button class="form-submit-btn" type="submit">Submit</button>
+                        <!--  Captcha & FORM SUBMIT BTN  -->
                         <div class="captcha-form" data-netlify-recaptcha="true"></div>
+                        <button class="form-submit-btn" type="submit">Submit</button>
                     </form>
                 </section>
             </div>
