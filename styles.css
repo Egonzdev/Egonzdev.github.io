@@ -341,6 +341,7 @@ main{
     right: 0;
     width: 50%;
     aspect-ratio: 1 / 1;
+    display: none;
 }
 
 .about-me-profile-img{
@@ -350,6 +351,7 @@ main{
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border: none;
+    display: none;
 }
 
 /* Textbox */
